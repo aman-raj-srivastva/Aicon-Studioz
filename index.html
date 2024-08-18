@@ -72,16 +72,16 @@
             <a href="#" class="navbar-link">Home</a>
           </li>
           <li>
-            <a href="#" class="navbar-link">About</a>
+            <a href="#about" class="navbar-link">About</a>
           </li>
           <li>
-            <a href="#" class="navbar-link">Projects</a>
+            <a href="#projects" class="navbar-link">Projects</a>
           </li>
           <li>
-            <a href="#" class="navbar-link">Blog</a>
+            <a href="#blogs" class="navbar-link">Blog</a>
           </li>
           <li>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="#contact" class="navbar-link">Contact</a>
           </li>
         </ul>
 
@@ -201,7 +201,7 @@
       <!-- 
         - #ABOUT
       -->
-      <section class="about" aria-labelledby="about-label">
+      <section class="about" id="about" aria-labelledby="about-label">
 
         <div class="heading">
             <h1 class="h2 section-title"> Welcome to AICON STUDIOZ</h1>
@@ -404,7 +404,7 @@
         - #FEATURE
       -->
 
-      <section class="section feature" aria-labelledby="feature-label">
+      <section class="section feature" id="blogs" aria-labelledby="feature-label">
         <div class="container">
 
           <figure class="feature-banner">
@@ -547,7 +547,7 @@
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section class="section project" id="projects" aria-labelledby="project-label">
         <div class="container">
 
           <p class="section-subtitle" id="project-label">Case Studies</p>
@@ -681,6 +681,29 @@
       </section>
 
       <!-- 
+        - #Contact Form
+      -->
+  <div class="contact-form" id="contact">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr>
+        </div>
+          <input type="hidden" name="access_key" value="42d71bc8-ada2-4986-bf6a-b29a1f0c9d95">
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required/>
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required/>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit">Submit <img src="assets/images/arrow_icon.png" alt=""></button>
+      </form>
+
+      <div class="contact-right">
+        <img src="assets/images/right_img.png" alt="">
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+
+      <!-- 
         - #CTA
       -->
       <section class="cta" aria-label="call to action">
@@ -697,6 +720,7 @@
 
     </article>
   </main>
+
 
   <!-- 
     - #FOOTER
